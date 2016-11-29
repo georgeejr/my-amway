@@ -1,17 +1,54 @@
 .sidebar {
 	border: 1px solid $light-gray;
 	border-top: 0;
+	color: $black;
+
+	a { color: $black; }
 	
 	.wrapper {
 		border-top: 5px solid $color-blue;
 		padding: 14px 10px;
 	}
 
-
-	.accordion-item.is-active {
+	.accordion-item  {
 		.accordion-title {
-			background-color: $color-green;
-			color: $white;
+			font-size:  15px;
+			background-color: $medium-gray;
+			border-color: $white;
+			padding: 15px;
+
+			&::before {
+				color: $color-blue;
+			}
+		}
+
+		&.is-active {
+			.accordion-title  {				
+				background-color: $color-green;
+				color: $white;
+
+				&::before { 
+					color: $white;
+				}
+			}
+		}
+
+		.accordion-content {
+			border-color: $white;
+			padding: 15px 21px; 
+			font-size: 15px;
+
+			ul {
+				margin-left: 0;
+
+				li {
+					margin-bottom: 6px;
+				}
+
+				li:last-child {
+					margin-bottom: 0;
+				}
+			}
 		}
 	}
 }
