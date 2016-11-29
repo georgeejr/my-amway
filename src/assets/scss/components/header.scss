@@ -65,20 +65,36 @@
     }
     .after-login{
         float: right;
+        padding:0;
+        margin:0;
         li{
-            padding: 55px 6px 0;
             float: left;
             width: 90px;
             text-align: center;
             font-size: 14px;
             line-height: 20px;
-            min-height: 113px;
+            min-height: 120px;
             border-left: 1px solid #EFEFEF;
+            position: relative;
             span{
                 color: #008fc5;
             }
+            .notif {
+                position: absolute;
+                top: 15px;
+                right: 18px;
+                background: red;
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                color: #fff;
+                font-size: 10px;
+            }
             a{
                 color:#464646;
+                padding:55px 6px 25px; 
+                min-height: 120px;
+                display:block;
             }
             &.settings{
                 background: url('../img/after-login-icons.jpg') no-repeat -2px 20px;
