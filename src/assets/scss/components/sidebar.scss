@@ -1,0 +1,17 @@
+.sidebar {
+	border: 1px solid $light-gray;
+	border-top: 0;
+	
+	.wrapper {
+		border-top: 5px solid $color-blue;
+		padding: 14px 10px;
+	}
+
+
+	.accordion-item.is-active {
+		.accordion-title {
+			background-color: $color-green;
+			color: $white;
+		}
+	}
+}
