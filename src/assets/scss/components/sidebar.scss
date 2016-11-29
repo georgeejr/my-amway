@@ -3,7 +3,14 @@
 	border-top: 0;
 	color: $black;
 
-	a { color: $black; }
+	a { 
+		color: $black; 
+
+		&:active,
+		&:hover {
+			color: $color-green;
+		} 
+	}
 	
 	.wrapper {
 		border-top: 5px solid $color-blue;

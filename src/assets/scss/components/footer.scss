@@ -1,0 +1,42 @@
+.footer {
+	border-top: 5px solid $color-blue;
+	position: relative; 
+
+	&::before {
+		display: block;
+		content: '';
+		height: 5px;
+		width: 25%;
+		background-color: $color-red;
+		position: absolute;
+		right: 0;
+		top: -5px;
+	}
+
+	.footer-brands {
+		padding: 10px 0;
+		border-bottom: 1px solid $light-gray;
+		text-align: center;
+	} 
+
+	.footer-nav	 {
+		ul {
+			display: inline-block;
+			width: 100%;
+			li {
+				float: left;
+				margin-right: 32px;
+			}
+		}
+		
+		a {
+			color: $dark-gray;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+	}
+
+	.footer-info {
+		padding: 20px 0;
+	}
+}	
