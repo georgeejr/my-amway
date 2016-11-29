@@ -1,0 +1,80 @@
+.main-content{
+     background:#F2F2F2;
+}
+.content-wrap{ 
+     background:#fff; 
+     padding:20px 22px 50px 22px;
+     margin-bottom:116px;
+-webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.38);
+-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.38);
+box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.38);
+     .page-title{
+          font-family:'FranklinGothicBookCondensed';
+          font-size:34px;
+          color:#032C5E;
+     }
+     .row{
+          margin-top:30px;
+          > p{
+               font-weight:bold;
+               font-size:14px;
+               
+          }
+          .small {
+                    font-size:13px;
+          }
+          h4{
+               font-size:18px;
+               color:#0099cc;
+          }
+          h6{
+               font-family:'FranklinGothicBookCondensed';
+               font-size:24px;
+               color:#333333;
+          }
+          .descript{
+               color:#333333;
+               ul{
+               margin:45px 0;
+                    .desc-title{
+                         font-weight:bold;
+                         font-size:14px;
+                    }
+                    p{
+                         font-size:13px;
+                         padding:10px 0;
+                         
+                    }
+                    li{
+                         background-repeat:no-repeat;
+                         background-position: top left;
+                         padding-left:44px;
+                         &:first-child{
+                             background-image:url('../img/1.png');
+                         } 
+                         &:nth-child(2){
+                             background-image:url('../img/2.png');
+                         }
+                         &:nth-child(3){
+                             background-image:url('../img/3.png');
+                         }
+                         &:nth-child(4){
+                             background-image:url('../img/4.png');
+                         }   
+                         &:nth-child(5){
+                             background-image:url('../img/5.png');
+                         }   
+                         &:nth-child(6){
+                             background-image:url('../img/6.png');
+                         }   
+                         &:nth-child(7){
+                             background-image:url('../img/7.png');
+                         }   
+                         &:nth-child(8){
+                             background-image:url('../img/8.png');
+                         } 
+                    }
+               }
+          }
+     }
+}
