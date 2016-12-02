@@ -1,45 +1,60 @@
 <aside class="sidebar">
 	<div class="wrapper">
-		<ul class="accordion" data-accordion>
-		  <li class="accordion-item is-active" data-accordion-item>
+		<ul id="sidebar-accordion" class="accordion" data-accordion>
+		  <li class="accordion-item {{#ifpage 'index' 'registration' 'resignation'}} is-active {{/ifpage}}" data-accordion-item>
 		    <a href="#" class="accordion-title">ABO Management</a>
 		    <div class="accordion-content" data-tab-content>
 		     	<ul>
-		     		<li><a href="#">Login</a></li>
-		     		<li><a href="#">Registration</a></li>
-		     		<li><a href="#">Resignation</a></li>
+		     		<li><a href="index.html">Login</a></li>
+		     		<li {{#ifpage 'registration'}} class="active" {{/ifpage}}><a href="registration.html">Registration</a></li>
+		     		<li {{#ifpage 'resignation'}} class="active" {{/ifpage}}><a href="resignation.html">Resignation</a></li>
 		     	</ul>
 		    </div>
 		  </li>
-		  <li class="accordion-item" data-accordion-item>
+		  <li class="accordion-item  {{#ifpage 'my-account-login' 'my-account-profile' 'my-account-order-history' 'my-account-shopping-list' 'my-account-voucher' 'my-account-address-book' 'my-account-contracts' 'my-account-payment-details' 'my-account-preferences' 'my-account-account-settings'}} is-active {{/ifpage}}" data-accordion-item>
 		    <a href="#" class="accordion-title">My Account</a>
 		    <div class="accordion-content" data-tab-content>
 		      <ul>
-		      	<li><a href="#">Item 1</a></li>
-		      	<li><a href="#">Item 2</a></li>
-		      	<li><a href="#">Item 2</a></li>
+		      	<li {{#ifpage 'my-account-login'}} class="active" {{/ifpage}}>
+		      		<a href="my-account-login.html">Login</a>
+		      	</li>
+		      	<li {{#ifpage 'my-account-profile'}} class="active" {{/ifpage}}>
+		      		<a href="my-account-profile.html">Profile</a>
+		      	</li>
+		      	<li {{#ifpage 'my-account-order-history'}} class="active" {{/ifpage}}>
+		      		<a href="my-account-order-history.html">Order History</a>
+		      	</li>
+		      	<li {{#ifpage 'my-account-shopping-list'}} class="active" {{/ifpage}}>
+		      		<a href="my-account-shopping-list.html">Shopping List</a>
+		      	</li>
+		      	<li  {{#ifpage 'my-account-voucher'}} class="active" {{/ifpage}}>
+		      		<a href="my-account-voucher.html">Voucher</a>
+		      	</li>
+		      	<li {{#ifpage 'my-account-address-book'}} class="active" {{/ifpage}}>
+		      		<a href="my-account-address-book.html">Address Book</a>
+		      	</li>
+		      	<li {{#ifpage 'my-account-contracts'}} class="active" {{/ifpage}}>
+		      		<a href="my-account-contracts.html">Contracts</a>
+		      	</li>
+		      	<li {{#ifpage 'my-account-payment-details'}} class="active" {{/ifpage}}>
+		      		<a href="my-account-payment-details.html">Payment Details</a>
+		      	</li>
+		      	<li {{#ifpage 'my-account-preferences'}} class="active" {{/ifpage}}>
+		      		<a href="my-account-preferences.html">Preferences</a>
+		      	</li>
+		      	<li {{#ifpage 'my-account-account-settings'}} class="active" {{/ifpage}}>
+		      		<a href="my-account-account-settings.html">Account Settings</a>
+		      	</li>
 		      </ul>
 		    </div>
 		  </li>
-		  <li class="accordion-item" data-accordion-item>
-		    <a href="#" class="accordion-title">Shop Finder</a>
-		    <div class="accordion-content" data-tab-content>
-		      <ul>
-		      	<li><a href="#">Item 1</a></li>
-		      	<li><a href="#">Item 2</a></li>
-		      	<li><a href="#">Item 2</a></li>
-		      </ul>
-		    </div>
+		  <li class="accordion-item {{#ifpage 'shop-finder'}} is-active {{/ifpage}}" data-accordion-item>
+		    <a href="shop-finder.html" class="accordion-title no-sub-item">Shop Finder</a>
+		    <div data-tab-content></div>
 		  </li>
-		  <li class="accordion-item" data-accordion-item>
-		    <a href="#" class="accordion-title">e-Commerce</a>
-		    <div class="accordion-content" data-tab-content>
-		      <ul>
-		      	<li><a href="#">Item 1</a></li>
-		      	<li><a href="#">Item 2</a></li>
-		      	<li><a href="#">Item 2</a></li>
-		      </ul>
-		    </div>
+		  <li class="accordion-item {{#ifpage 'e-commerce'}} is-active {{/ifpage}}" data-accordion-item>
+		    <a href="e-commerce.html" class="accordion-title no-sub-item">e-Commerce</a>
+		    <div data-tab-content></div>
 		  </li>
 		  <li class="accordion-item" data-accordion-item>
 		    <a href="#" class="accordion-title">Business Center</a>

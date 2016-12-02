@@ -3,6 +3,7 @@
 	border-top: 0;
 	color: $black;
 	background:#fff;
+	margin-bottom: 116px;
 	a { 
 		color: $black; 
 
@@ -15,6 +16,10 @@
 	.wrapper {
 		border-top: 5px solid $color-blue;
 		padding: 14px 10px;
+
+		> ul {
+			margin-bottom: 0;
+		}
 	}
 
 	.accordion-item  {
@@ -26,6 +31,13 @@
 
 			&::before {
 				color: $color-blue;
+			}
+		}
+
+		.accordion-title.no-sub-item {
+			&::before,
+			& ~ .accordion-content {
+				display: none;
 			}
 		}
 
@@ -54,6 +66,10 @@
 
 				li:last-child {
 					margin-bottom: 0;
+				}
+
+				li.active a {
+					color: $color-green;
 				}
 			}
 		}
