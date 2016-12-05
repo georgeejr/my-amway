@@ -3,7 +3,12 @@
 	border-top: 0;
 	color: $black;
 	background:#fff;
-	margin-bottom: 116px;
+	margin-bottom: 30px;
+
+	@media screen and #{breakpoint(large)} {
+	 	margin-bottom: 116px;
+	}
+
 	a { 
 		color: $black; 
 

@@ -32,6 +32,12 @@ box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.38);
                font-size:24px;
                color:#333333;
           }
+          .img-overflow {
+            max-width: calc(100% + 8px); 
+            position: relative; 
+            left: -8px;
+          }
+
           .descript{
                color:#333333;
                ul{
