@@ -1,0 +1,19 @@
+.content-wrap .row .descript ul li.nested-item {
+    background-image: none; 
+    padding-left: 0;
+    ul {
+      padding-left: 0;
+    }
+
+    &:nth-child(2) {
+    	li {
+    		min-height: 33px; 
+    		&:first-child{
+    		    background-image:url('../img/2-1.png');
+    		} 
+    		&:nth-child(2){
+    		    background-image:url('../img/2-2.png');
+    		}
+    	}
+    } 
+ }
