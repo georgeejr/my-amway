@@ -49,14 +49,21 @@
     .logoSearch{
         margin-top:10px;
         float: left;
-        width:100%;
+        width:100%; 
         .logo{
             float: left;
+             @include breakpoint(medium down) { 
+                width:100%;
+                text-align:center;
+            }
         }
         #search{
             float: left;
             margin: 20px 0 0 0;
             width: 60%;
+            @include breakpoint(medium down) { 
+                width:100%;
+            }
             input{
                 border:1px solid #999;
                 background: url("../img/search-icon.jpg") no-repeat center right;
@@ -67,6 +74,9 @@
         float: right;
         padding:0;
         margin:0;
+        @include breakpoint(medium down) { 
+            display:none;
+        }
         li{
             float: left;
             width: 90px;
