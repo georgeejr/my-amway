@@ -4,7 +4,7 @@
 .content-wrap{ 
      background:url('../img/cont-wrap-line.png') repeat-x center 75px #fff; 
      padding:20px 22px 50px 22px;
-     margin-bottom:116px;
+     margin-bottom:30px;
     -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.38);
     -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.38);
     box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.38);
@@ -101,6 +101,14 @@
                }
           }
      }
+}
+
+.back-to-top {
+  float: right;
+  width: 37px;
+  height: 37px;
+  background: $color-green url('../img/arrow-up.png') center center no-repeat;
+  margin-bottom: 116px;
 }
 
 .animate-fade {
