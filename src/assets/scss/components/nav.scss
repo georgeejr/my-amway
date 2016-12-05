@@ -1,4 +1,9 @@
 .nav {
+
+   @include breakpoint(medium down) { 
+      display: none;
+   }  
+
    ul#menu{
         background: #FBFBFB;
         float: left;
