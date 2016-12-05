@@ -5,7 +5,7 @@
 		    <a href="#" class="accordion-title">ABO Management</a>
 		    <div class="accordion-content" data-tab-content>
 		     	<ul>
-		     		<li><a href="index.html">Login</a></li>
+		     		<li {{#ifpage 'index'}} class="active" {{/ifpage}}><a href="index.html">Login</a></li>
 		     		<li {{#ifpage 'registration'}} class="active" {{/ifpage}}><a href="registration.html">Registration</a></li>
 		     		<li {{#ifpage 'resignation'}} class="active" {{/ifpage}}><a href="resignation.html">Resignation</a></li>
 		     	</ul>
