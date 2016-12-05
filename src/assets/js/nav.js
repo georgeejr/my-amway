@@ -14,6 +14,4 @@ var awApp = awApp || {};
       $(function(){
             nav.init();
       });
-
-
 })(jQuery);
