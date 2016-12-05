@@ -2,6 +2,10 @@
 	border-top: 5px solid $color-blue;
 	position: relative; 
 
+	@include breakpoint(medium down) { 
+	   display: none;
+	}
+
 	&::before {
 		display: block;
 		content: '';

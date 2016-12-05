@@ -1,5 +1,10 @@
 .header {
     border-top: 5px solid #DBDBDB;
+     
+     @include breakpoint(medium down) { 
+        display: none;
+     }
+
     .region{
         float: left;
         width: 100%;
