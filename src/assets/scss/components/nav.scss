@@ -92,11 +92,12 @@
                 position: absolute;
             }
             .submenu{
-                display:none;
+                display:none; 
                 margin-top:-1px;
                 padding:27px 15px;
-                max-height:540px;
+                max-height:560px;
                 overflow-x:auto;
+                transition: opacity .15s ease-in-out;
                 li{
                    .category{
                        h5{

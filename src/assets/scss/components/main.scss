@@ -2,12 +2,17 @@
      background:#F2F2F2;
 }
 .content-wrap{ 
-     background:#fff; 
+     background:url('../img/cont-wrap-line.png') repeat-x center 75px #fff; 
      padding:20px 22px 50px 22px;
      margin-bottom:116px;
--webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.38);
--moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.38);
-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.38);
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.38);
+    -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.38);
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.38);
+    .columns {
+        >p {
+            font-size: 15px;
+        }
+    }
      .page-title{
           font-family:'FranklinGothicBookCondensed';
           font-size:34px;
@@ -26,6 +31,7 @@ box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.38);
           h4{
                font-size:18px;
                color:#0099cc;
+               margin-bottom:0;
           }
           h6{
                font-family:'FranklinGothicBookCondensed';
@@ -48,7 +54,10 @@ box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.38);
           .descript{
                color:#333333;
                ul{
-               margin:45px 0;
+               margin:0;
+               @include breakpoint(medium down) { 
+                   margin:25px 0;
+               }
                     .desc-title{
                          font-weight:bold;
                          font-size:14px;
@@ -90,4 +99,8 @@ box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.38);
                }
           }
      }
+}
+
+.animate-fade {
+  @include mui-animation(fade);
 }
