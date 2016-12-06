@@ -10,7 +10,10 @@
     box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.38);
     .columns {
         >p {
-            font-size: 15px;
+            font-size: 1.125rem;
+            font-family: 'FranklinGothicBookCondensed';
+            margin-top: -14px;
+            
         }
     }
      .page-title{
@@ -19,27 +22,34 @@
           color:#032C5E;
      }
      .row{
-          margin-top:30px;
+          margin-top:40px;
+          margin-bottom:75px; 
+         @include breakpoint(medium down) { 
+             margin-bottom: -30px;
+        }
           > p{
                font-weight:bold;
                font-size:14px;
-               
+               color:#333333;
           }
           .small {
                     font-size:13px;
           }
           h4{
-               font-size:18px;
-               color:#0099cc;
-               margin-bottom:0;
+               font-size: 1.23rem;
+                color: #0099cc; 
+                margin-bottom: 5px;
           }
           h6{
                font-family:'FranklinGothicBookCondensed';
                font-size:24px;
                color:#333333;
-               line-height: 0.8;
-               margin-bottom: 10px;
-
+               line-height: 1;
+               margin-bottom: 18px;
+               
+               @include breakpoint(medium down){
+                   line-height: 28px;
+               }
                small {
                   color: $darker-gray;
                   font-size: .75em;
@@ -50,7 +60,12 @@
             position: relative; 
             left: -8px;
           }
-
+          .img-overflow-r {
+            max-width: calc(100% + 8px); 
+            position: relative; 
+            right: -8px;
+            left:0;
+          }
           .descript{
                color:#333333;
                ul{
@@ -60,16 +75,21 @@
                }
                     .desc-title{
                          font-weight:bold;
-                         font-size:14px;
+                         font-size: 1.15rem;
+                         line-height:1;
                     }
                     p{
-                         font-size:13px;
+                         font-size: .86rem;
                          padding:10px 0;
                          margin-bottom:0;
+                         line-height: 17px; 
                          &.desc-empasized{
                              font-style:italic;
                              span{
                                  color:#cc00ff;
+                                 &.text{
+                                     color:#0090c5;
+                                 }
                              }
                          }
                     }
@@ -78,32 +98,30 @@
                          background-position: top left;
                          padding-left:44px;
                          margin-bottom:10px;
-                         &:first-child{
+                         &:first-child, &.n1{
                              background-image:url('../img/1.png');
                          } 
-                         &:nth-child(2){
+                         &:nth-child(2), &.n2{
                              background-image:url('../img/2.png');
                          }
-                         &:nth-child(3){
+                         &:nth-child(3), &.n3{
                              background-image:url('../img/3.png');
                          }
-                         &:nth-child(4){
+                         &:nth-child(4), &.n4{
                              background-image:url('../img/4.png');
                          }   
-                         &:nth-child(5){
+                         &:nth-child(5), &.n5{
                              background-image:url('../img/5.png');
                          }   
-                         &:nth-child(6){
+                         &:nth-child(6), &.n6{
                              background-image:url('../img/6.png');
                          }   
-                         &:nth-child(7){
+                         &:nth-child(7), &.n7{
                              background-image:url('../img/7.png');
                          }   
-                         &:nth-child(8){
+                         &:nth-child(8), &.n8{
                              background-image:url('../img/8.png');
-                         } 
-
-                         
+                         }
                     }
                }
           }
