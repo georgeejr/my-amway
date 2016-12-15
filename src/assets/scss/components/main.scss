@@ -68,8 +68,9 @@
           }
           .descript{
                color:#333333;
-               ul{
+               ol{
                margin:0;
+               counter-reset: item;
                @include breakpoint(medium down) { 
                    margin:25px 0;
                }
@@ -94,34 +95,49 @@
                          }
                     }
                     li{
+                            
                          background-repeat:no-repeat;
                          background-position: top left;
                          padding-left:44px;
                          margin-bottom:10px;
-                         &:first-child, &.n1{
-                             background-image:url('../img/1.png');
-                         } 
-                         &:nth-child(2), &.n2{
-                             background-image:url('../img/2.png');
+                         // &:first-child, &.n1{
+                         //     background-image:url('../img/1.png');
+                         // } 
+                         // &:nth-child(2), &.n2{
+                         //     background-image:url('../img/2.png');
+                         // }
+                         // &:nth-child(3), &.n3{
+                         //     background-image:url('../img/3.png');
+                         // }
+                         // &:nth-child(4), &.n4{
+                         //     background-image:url('../img/4.png');
+                         // }   
+                         // &:nth-child(5), &.n5{
+                         //     background-image:url('../img/5.png');
+                         // }   
+                         // &:nth-child(6), &.n6{
+                         //     background-image:url('../img/6.png');
+                         // }   
+                         // &:nth-child(7), &.n7{
+                         //     background-image:url('../img/7.png');
+                         // }   
+                         // &:nth-child(8), &.n8{
+                         //     background-image:url('../img/8.png');
+                         // } 
+                         li{
+                          padding-left: 0;
+                          &:before {  counter-reset: item; content: counters(item, ".") " "; counter-increment: item; padding-left: 4px;}
                          }
-                         &:nth-child(3), &.n3{
-                             background-image:url('../img/3.png');
-                         }
-                         &:nth-child(4), &.n4{
-                             background-image:url('../img/4.png');
-                         }   
-                         &:nth-child(5), &.n5{
-                             background-image:url('../img/5.png');
-                         }   
-                         &:nth-child(6), &.n6{
-                             background-image:url('../img/6.png');
-                         }   
-                         &:nth-child(7), &.n7{
-                             background-image:url('../img/7.png');
-                         }   
-                         &:nth-child(8), &.n8{
-                             background-image:url('../img/8.png');
-                         }
+
+                    }
+                    &.continue {
+                      counter-reset: item 4;
+                    }
+                    &.continue-3 {
+                      counter-reset: item 2;
+                    }
+                    &.continue-4 {
+                      counter-reset: item 3;
                     }
                }
           }
@@ -139,3 +155,30 @@
 .animate-fade {
   @include mui-animation(fade);
 }
+
+ ol.rounded-list {
+   list-style: none;
+   margin-left: 10px;
+   margin-top: 33px;
+   padding: 0;
+ }
+ ol.rounded-list li { font-size: 16px; 
+   counter-increment: item; list-style-type:none;
+   margin-bottom: 15px;
+   // padding-left: 0!important;
+
+ }
+ ol.rounded-list  li:before {
+   margin-right: 10px;
+   content: counter(item);
+   background:#cb00fe;
+   border-radius: 100%;
+   color: white;
+   width: 28px; height:28px; padding:1px;
+   text-align: center;
+   display: inline-block;
+       position: absolute;
+    left: 15px;
+ }
+.rounded-list .desc-title{ font-size:20px;}
+// .rounded-list p{ margin-left:40px;}
