@@ -52,18 +52,100 @@
 		    <a href="shop-finder.html#article-content" class="accordion-title no-sub-item">Shop Finder</a>
 		    <div data-tab-content></div>
 		  </li>
-		  <li class="accordion-item {{#ifpage 'e-commerce'}} is-active {{/ifpage}}" data-accordion-item>
-		    <a href="e-commerce.html#article-content" class="accordion-title no-sub-item">e-Commerce</a>
-		    <div data-tab-content></div>
+		  <li class="accordion-item {{#ifpage 'e-commerce' 'e-commerce-payments' 'e-commerce-brand-zone' 'e-commerce-product-search' 'e-commerce-category-landing' 'e-commerce-brand-landing' 'e-commerce-product-listing' 'e-commerce-product-detail' 'e-commerce-promotions-and-discounts' 'e-commerce-shopping-cart'}} is-active {{/ifpage}}" data-accordion-item>
+		    <a href="e-commerce.html#article-content" class="accordion-title">e-Commerce</a>
+		    <div class="accordion-content" data-tab-content>
+		    	<ul>
+		      		<li {{#ifpage 'my-account-login'}} class="active" {{/ifpage}}>
+		      			<a href="#">How to access e-Commerce</a>
+		      		</li>
+		      		<li {{#ifpage 'my-account-login'}} class="active" {{/ifpage}}>
+		      			<a href="#">Orders & Order Processes</a>
+		      		</li>
+		      		<li {{#ifpage 'e-commerce-payments'}} class="active" {{/ifpage}}>
+		      			<a href="e-commerce-payments.html#article-content">Payments</a>
+		      		</li>
+		      		<li {{#ifpage 'e-commerce-brand-zone'}} class="active" {{/ifpage}}>
+		      			<a href="e-commerce-brand-zone.html#article-content">Brand Zone</a>
+		      		</li>
+		      		<li {{#ifpage 'e-commerce-product-search'}} class="active" {{/ifpage}}>
+		      			<a href="e-commerce-product-search.html#article-content">Product Search</a>
+		      		</li>
+		      		<li {{#ifpage 'e-commerce-category-landing'}} class="active" {{/ifpage}}>
+		      			<a href="e-commerce-category-landing.html#article-content">Category Landing </a>
+		      		</li>
+		      		<li {{#ifpage 'e-commerce-brand-landing'}} class="active" {{/ifpage}}>
+		      			<a href="e-commerce-brand-landing.html#article-content">Brand Landing</a>
+		      		</li>
+		      		<li {{#ifpage 'e-commerce-product-listing'}} class="active" {{/ifpage}}>
+		      			<a href="e-commerce-product-listing.html#article-content">Product Listing </a>
+		      		</li>
+		      		<li {{#ifpage 'e-commerce-product-detail'}} class="active" {{/ifpage}}>
+		      			<a href="e-commerce-product-detail.html#article-content">Product Detail</a>
+		      		</li>
+		      		<li {{#ifpage 'e-commerce-promotions-and-discounts'}} class="active" {{/ifpage}}>
+		      			<a href="e-commerce-promotions-and-discounts.html#article-content">Promotions and Discounts</a>
+		      		</li>
+		      		<li {{#ifpage 'e-commerce-shopping-cart'}} class="active" {{/ifpage}}>
+		      			<a href="e-commerce-shopping-cart.html#article-content">Shopping Cart </a>
+		      		</li>
+		     	</ul>
+		    </div>
 		  </li>
-		  <li class="accordion-item" data-accordion-item>
+		  <li class="accordion-item {{#ifpage 'business-center' 'business-center-PVBV' 'business-center-ITCCAS' 'business-center-OPA' 'business-center-business-reports' 'business-center-my-performance' 'business-center-product-warranty'}} is-active {{/ifpage}}" data-accordion-item>
 		    <a href="#" class="accordion-title">Business Center</a>
 		    <div class="accordion-content" data-tab-content>
 		      <ul>
-		      	<li><a href="#">Item 1</a></li>
-		      	<li><a href="#">Item 2</a></li>
-		      	<li><a href="#">Item 2</a></li>
-		      </ol>
+		      	<li {{#ifpage 'business-center'}} class="active" {{/ifpage}}>
+		      		<a href="business-center.html#article-content">How to access Business Center (before login)</a>
+		      	</li>
+		      	<li {{#ifpage 'business-center-PVBV'}} class="active" {{/ifpage}}>
+		      		<a href="business-center-PVBV.html#article-content">PV/BV Inquiry Screen </a>
+		      	</li>
+		      	<li {{#ifpage 'business-center-ITCCAS'}} class="active" {{/ifpage}}>
+		      		<a href="business-center-ITCCAS.html#article-content">ITCCAS- Intent to Continue Cum Amagram Subscription</a>
+		      	</li>
+		      	<li {{#ifpage 'business-center-OPA'}} class="active" {{/ifpage}}>
+		      		<a href="business-center-OPA.html#article-content">Online Award Reporting (Only Platinum & Above)</a>
+		      	</li>
+		      	<li {{#ifpage 'business-center-business-reports'}} class="active" {{/ifpage}}>
+		      		<a href="business-center-business-reports.html#article-content">Business Reports</a>
+		      	</li>
+		      	<li {{#ifpage 'business-center-my-performance'}} class="active" {{/ifpage}}>
+		      		<a href="business-center-my-performance.html#article-content">My Performance (Only Platinum & Above)</a>
+		      	</li>
+		      	<li {{#ifpage 'business-center-product-warranty'}} class="active" {{/ifpage}}>
+		      		<a href="business-center-product-warranty.html#article-content">Product Warranty </a>
+		      	</li>
+		      </ul>
+		    </div>
+		  </li>
+		  <li class="accordion-item {{#ifpage 'my-biz' 'my-biz-dashboard'}} is-active {{/ifpage}}" data-accordion-item>
+		    <a href="#" class="accordion-title">MyBiz </a>
+		    <div class="accordion-content" data-tab-content>
+		      <ul>
+		      	<li {{#ifpage 'my-biz'}} class="active" {{/ifpage}}>
+		      		<a href="my-biz.html#article-content">MyBiz </a>
+		      	</li>
+		      	<li {{#ifpage 'my-biz-dashboard'}} class="active" {{/ifpage}}>
+		      		<a href="my-biz-dashboard.html#article-content">MyBiz Dashboard</a>
+		      	</li>
+		      	<li {{#ifpage 'business-center-ITCCAS'}} class="active" {{/ifpage}}>
+		      		<a href=".html#article-content">MyBiz Line of Sponsorship (LOS) </a>
+		      	</li>
+		      	<li {{#ifpage 'business-center-OPA'}} class="active" {{/ifpage}}>
+		      		<a href=".html#article-content">MyBiz Watchlist</a>
+		      	</li>
+		      	<li {{#ifpage 'business-center-business-reports'}} class="active" {{/ifpage}}>
+		      		<a href=".html#article-content">MyBiz Action Reports</a>
+		      	</li>
+		      	<li {{#ifpage 'business-center-my-performance'}} class="active" {{/ifpage}}>
+		      		<a href=".html#article-content">MyBiz My Business Income </a>
+		      	</li>
+		      	<li {{#ifpage 'business-center-product-warranty'}} class="active" {{/ifpage}}>
+		      		<a href=".html#article-content">MyBiz Higher Award Tracking </a>
+		      	</li>
+		      </ul>
 		    </div>
 		  </li>
 		  <li class="accordion-item" data-accordion-item>
@@ -73,7 +155,7 @@
 		      	<li><a href="#">Item 1</a></li>
 		      	<li><a href="#">Item 2</a></li>
 		      	<li><a href="#">Item 2</a></li>
-		      </ol>
+		      </ul>
 		    </div>
 		  </li>
 		</ol>
