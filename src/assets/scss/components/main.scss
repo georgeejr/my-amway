@@ -21,12 +21,22 @@
           font-size:34px;
           color:#032C5E;
      }
-     .row{
-          margin-top:40px;
-          margin-bottom:75px; 
-         @include breakpoint(medium down) { 
-             margin-bottom: -30px;
+     .row {
+      margin-top:40px;
+      margin-bottom:75px; 
+      
+      @include breakpoint(medium down) { 
+         margin-bottom: -30px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+
+        img {
+          margin-bottom: 0;
         }
+      } 
+
           &.row-continue {
             margin-top: -75px;
           }
